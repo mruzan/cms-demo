@@ -1,0 +1,117 @@
+.home {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: $font-color;
+     
+
+    .flex-container {
+        width: 40rem;
+        height: auto;
+        padding: 1rem; 
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        .logo-wrapper{
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .flex-wrapper{
+            background-color: $block-bg;
+            height: auto;
+            padding: 1rem; 
+            align-items: center;
+            justify-content: center;
+
+            .company-title{
+                margin-top: 10px;
+                font-size: 12px;
+                
+    
+                strong{
+                    text-transform: uppercase;
+                }
+            }
+            .title{
+                font-size: 22px;
+                margin: 11px 0;
+                font-weight: 700;
+            }
+            .response{
+                margin-top: 10px;
+                font-size: 16px;
+                background-color: $home-bg;
+                line-height: 1;
+                display: inline-block;
+                color: $white;
+            }
+    
+            .smiley-wrapper{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                .flex-item {
+                    padding: 5px;           
+                    margin: 0;  
+                    cursor: pointer;
+        
+                    img{
+                        width: auto;
+                        height: 80px;
+                    }
+                   
+                }
+            }
+        }
+
+        .footer{
+            padding: 20px 0;
+            font-size: 10px;
+            color: $white;
+
+            .name{
+                display: block;
+                color: $light-green;
+                line-height: 3;
+            }
+            .address{
+                display: block;
+                line-height: 1.5;
+            }
+            .copy{
+                display: block;
+                line-height: 1.5;
+            }
+        }
+        
+        
+        
+      }    
+}
+
+@include extraSmallScreens {
+    .home{
+
+        .flex-container{
+            
+            .flex-wrapper{
+                width: 395px;
+
+                .smiley-wrapper{
+
+                    .flex-item img {
+                        width: auto;
+                        height: 65px;
+                    }
+
+                } 
+            }
+        } 
+    } 
+}
